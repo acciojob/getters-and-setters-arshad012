@@ -7,8 +7,8 @@ class Person {
 }
 
 class Student extends Person {
-	constructor(name, age) {
-		super(name, age);
+	constructor(name) {
+		super(name);
 	}
 
 	study() {
@@ -17,8 +17,8 @@ class Student extends Person {
 }
 
 class Teacher extends Person {
-	constructor(name, age) {
-		super(name, age);
+	constructor(name) {
+		super(name);
 	}
 
 	teach() {
@@ -27,7 +27,7 @@ class Teacher extends Person {
 }
 
 
-const person = new Person("John", 30);
+const person = new Person("John", 25);
 console.log(person.name);
 person.age = 30;
 console.log(person.age);
@@ -44,3 +44,4 @@ teacher.teach();
 window.Person = Person;
 window.Student = Student;
 window.Teacher = Teacher;
+
